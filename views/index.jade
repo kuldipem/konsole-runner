@@ -2,6 +2,10 @@ extends layout
 
 block content
  form(name="konsoleform", action="", method="", onsubmit="return false;")
-      textarea(name="screen",class="bash", id="screen", style="padding:10px; width:100%;height: 250px;", readonly="")
+      pre
+            code(name="screen", id="screen", style="width:100%;height: 250px;", readonly="")
       input(type="text", id="cmd", name="cmd", style="width:100%;height: 30px;")
-      input(type="button", id="fire", name="fire", value="fire")
+      br
+      br
+      input(type="button",class="btn btn-primary btn-block", id="fire", name="fire", value="Fire")
+      input(type="button",class="btn btn-primary btn-danger btn-block", id="clear", name="clear", value="Clear")
