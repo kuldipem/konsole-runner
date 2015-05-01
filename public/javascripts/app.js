@@ -21,7 +21,7 @@ $(document).ready(function() {
         }
 
         // if command is "clear" or  "cls" than clear screen
-        if($cmd==="clear" || $cmd==="cls"){
+        if ($cmd === "clear" || $cmd === "cls") {
             $("#clear").click();
             $("#cmd").val(''); // clear command input
             return false;
@@ -47,8 +47,8 @@ $(document).ready(function() {
 
 
 
-     $("#clear").on("click", function(){
-     		$("#screen").text("");
-     });
+    $("#clear").on("click", function() {
+        $("#screen").text("");
+    });
 
 });
